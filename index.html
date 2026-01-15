@@ -1,131 +1,117 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XQPH60QQYV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8">
+  <title>Histoires de Migrants</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  gtag('config', 'G-XQPH60QQYV');
-</script>
-  <title>Histoires de Migrants - Récits d'exil et d'humanité</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Claudia">
-  <meta name="description" content="Un blog dédié aux récits de vie et aux parcours des personnes en exil.">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/vendor.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Style principal -->
+  <link rel="stylesheet" href="style.css">
 
+  <!-- Ton CSS -->
   <link rel="stylesheet" href="css/newstyle.css">
 </head>
 
 <body>
 
-  <div class="search-popup">
-    <div class="search-popup-container">
-      <form role="search" method="get" class="form-group" action="index.html">
-        <input type="search" id="search-form" class="form-control border-0 border-bottom" placeholder="Rechercher un récit..." name="s">
-        <button type="submit" class="search-submit border-0 position-absolute bg-white" style="top: 15px;right: 15px;">
-          <svg class="search" width="24" height="24"><use xlink:href="#search"></use></svg>
-        </button>
-      </form>
+<!-- HEADER -->
+<header id="header">
 
-      <h5 class="cat-list-title">Parcourir les thématiques</h5>
-      <ul class="cat-list">
-        <li class="cat-list-item"><a href="#">Récits de vie</a></li>
-        <li class="cat-list-item"><a href="#">Parcours d'exil</a></li>
-        <li class="cat-list-item"><a href="#">Témoignages</a></li>
-        <li class="cat-list-item"><a href="#">Espoir</a></li>
-        <li class="cat-list-item"><a href="#">Humanité</a></li>
-      </ul>
-    </div>
+  <a href="#" class="button"><nav class="header-top py-2 text-center text-white" style="background:#556B2F;">
+    S’ABONNER À LA NEWSLETTER
+  </nav></a>
+
+  <div class="logo text-center my-5">
+    <h1 class="site-title">Histoires de Migrants</h1>
+    <p class="site-tagline">Donner une voix à l’exil</p>
   </div>
 
-  <header id="header">
-    <nav class="header-top py-1" style="background-color: #556B2F;"> <div class="container-lg">
-        <div class="d-flex flex-wrap justify-content-between align-items-center text-white">
-          <div class="newsletter">
-            <a href="#"><svg class="me-1" width="18" height="18" fill="white"><use xlink:href="#mail"></use></svg></a>
-            S'ABONNER À LA NEWSLETTER
-          </div>
-          <ul class="social-links text-white d-flex flex-wrap list-unstyled m-0">
-            </ul>
-        </div>
-      </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg justify-content-center border-top border-bottom py-3">
+    <ul class="navbar-nav">
+      <li class="nav-item px-3"><a class="nav-link" href="#">Accueil</a></li>
+      <li class="nav-item px-3"><a class="nav-link" href="#">La démarche</a></li>
+      <li class="nav-item px-3"><a class="nav-link" href="#">Les récits</a></li>
+      <li class="nav-item px-3"><a class="nav-link" href="#">Portraits</a></li>
+      <li class="nav-item px-3"><a class="nav-link" href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-    <nav class="logo text-center my-4">
-      <div class="container-lg">
-        <a href="index.html">
-          <h1 style="font-family: 'Cabin', sans-serif; color: #2C3E50; font-weight: bold; letter-spacing: -1px;">HISTOIRES DE MIGRANTS</h1>
-          <p style="font-size: 14px; color: #556B2F; letter-spacing: 2px; text-uppercase;">DONNER UNE VOIX À L'EXIL</p>
-        </a>
-      </div>
-    </nav>
+</header>
 
-    <nav id="primary-header" class="navbar navbar-expand-lg py-2 border-top">
-      <div class="container-lg">
-        <div class="offcanvas-body align-items-center justify-content-center">
-          <ul class="navbar-nav align-items-center mb-2 mb-lg-0">
-            <li class="nav-item px-3"><a class="nav-link active p-0" href="index.html">Accueil</a></li>
-            <li class="nav-item px-3"><a class="nav-link p-0" href="about.html">Ma Démarche</a></li>
-            <li class="nav-item px-3"><a class="nav-link p-0" href="blog.html">Les Récits</a></li>
-            <li class="nav-item px-3"><a class="nav-link p-0" href="gallery.html">Portraits</a></li>
-            <li class="nav-item px-3"><a class="nav-link p-0" href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+<!-- HERO -->
+<section class="hero d-flex align-items-center justify-content-center text-center"
+         style="background:url('images/hero-migrants.jpg') center/cover no-repeat; height:80vh;">
+  <div class="bg-white bg-opacity-75 p-4">
+    <img src="images/Récit à l'une.jpg" class="img-fluid" alt="">
+    <a href="#" class="button"><h2>« Mon nom est Samer, et voici le chemin que j’ai parcouru. »</h2></a>
+    <a href="#" class="button">Lire le récit</a>
+  </div>
+</section>
+<br>
+<br>
 
-  <section id="slider">
-    <div class="swiper slider position-relative">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide d-flex" style="background-image: url(images/hero-migrants.jpg); background-size: cover; height: 80vh; background-position: center;">
-          <div class="container text-center m-auto mb-5 pb-5">
-            <div class="text-center w-75 m-auto bg-white p-3 p-lg-4 bg-opacity-75">
-              <p class="text-black" style="letter-spacing:1px;"><b>RÉCITS</b> / 2026</p>
-              <h2 class="display-5"><a href="blog-single.html">"Mon nom est Samer, et voici le chemin que j'ai parcouru."</a></h2>
-            </div>
-          </div>
-        </div>
-      </div>
+<!-- ARTICLE MIS EN AVANT -->
+<section class="featured-post container-lg my-5">
+  <div class="row align-items-center">
+    <div class="col-lg-6">
+      <img src="images/recit-feature.jpg" class="img-fluid" alt="">
     </div>
-  </section>
-
-  <section id="blog" class="padding-medium">
-    <div class="container-lg">
-      <div class="row flex-row-reverse g-md-5">
-        <main class="col-lg-9">
-          <div class="card rounded-0 border-0 border-2 border-bottom pb-5">
-            <a href="single-post.html"><img src="images/recit1.jpg" class="img-fluid" alt="image"></a>
-            <div class="card-body p-0 text-center">
-              <div class="text-center mt-2">
-                <p class="text-gray" style="letter-spacing:1px;"><b>TÉMOIGNAGE</b> / JANVIER 2026</p>
-              </div>
-              <a href="single-post.html">
-                <h3 class="text-primary my-3 text-uppercase" style="color: #556B2F !important;">Transformer l'exil en une passerelle d'espoir</h3>
-              </a>
-              <p>Derrière chaque statistique, il y a un visage. Aujourd'hui, nous vous présentons l'histoire de ceux qui ont tout laissé derrière eux pour reconstruire un futur possible.</p>
-              <a href="blog-single.html" class="button arrow text-center text-uppercase">Lire l'histoire</a>
-            </div>
-          </div>
-          </main>
-      </div>
+    <div class="col-lg-6 ps-lg-5">
+      <p class="post-meta">TÉMOIGNAGE · JANVIER 2026</p>
+     <a href="#" class="button"><h3>Transformer l’exil en une passerelle d’espoir</h3></a>
+      <p>
+        Derrière chaque statistique, il y a un visage.
+        Ce récit raconte le courage de celles et ceux qui ont tout quitté.
+      </p>
+      <a href="#" class="button">Lire l’histoire</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  </body>
+<!-- GRILLE DES RÉCITS -->
+<section class="post-grid container-lg my-5">
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-3">
+      <article class="post-card">
+        <img src="images/recit-1.jpg" class="img-fluid" alt="">
+        <a href="#" class="button"><h4>Un départ sans retour</h4></a> 
+      </article>
+    </div>
 
+    <div class="col-md-6 col-lg-3">
+      <article class="post-card">
+        <img src="images/recit-2.jpg" class="img-fluid" alt="">
+       <a href="#" class="button"><h4>Traverser les frontières</h4></a> 
+      </article>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <article class="post-card">
+        <img src="images/recit-3.jpg" class="img-fluid" alt="">
+       <a href="#" class="button"><h4>Reconstruire une vie</h4></a> 
+      </article>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <article class="post-card">
+        <img src="images/recit-4.jpg" class="img-fluid" alt="">
+       <a href="#" class="button"><h4>Espoir et dignité</h4></a> 
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer text-center py-5">
+  <p>© 2026 — Histoires de Migrants</p>
+</footer>
+
+</body>
 </html>
+
