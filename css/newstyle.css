@@ -1,0 +1,60 @@
+/* TYPOGRAPHIE */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  text-decoration: underline;
+}
+
+/* TITRE PRINCIPAL */
+.site-title {
+  font-size: 3.2rem;
+  color: #2f5d3a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-tagline {
+  color: #2f5d3a;
+  font-size: 1.1rem;
+}
+
+/* LIENS */
+a {
+  color: #2f5d3a;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #1f3f28;
+}
+
+/* FOND DES SECTIONS BLOG */
+#blog {
+  background-color: #e6f0ea;
+}
+
+/* ESPACE AVANT FOOTER */
+#instagram {
+  margin-bottom: 4rem;
+}
+
+/* PAGINATION EN CERCLE */
+.pagination .page-link {
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2f5d3a;
+  border: 1px solid #2f5d3a;
+}
+
+/* PAGE ACTIVE */
+.pagination .page-link.active {
+  background-color: #2f5d3a;
+  color: #ffffff;
+  border-color: #2f5d3a;
+}
